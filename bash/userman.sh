@@ -10,7 +10,7 @@ do
 
         find)
                 count=0
-                myfiles=($(ls *.user))
+                myfiles=($(ls *.user 2>/dev/null))
                 for myfile in ${myfiles[@]}
                 do
                         #echo  $myfile
@@ -31,7 +31,7 @@ do
         ;;
         list)
                 count=0
-                myfiles=($(ls *.user))
+                myfiles=($(ls *.user 2>/dev/null))
                 for myfile in ${myfiles[@]}
                 do
                 let "count += 1"
