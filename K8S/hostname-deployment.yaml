@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hostname-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hostname
+  template:
+    metadata:
+      labels:
+        app: hostname
+    spec:
+      containers:
+      - name: myflask
+        image: edk2010/myflask:latest
+        ports:
+        - containerPort: 8080
