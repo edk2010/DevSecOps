@@ -1,0 +1,36 @@
+{
+    "authors": [
+      {
+        "id": 1,
+        "name": "Author1",
+        "birth_year": 1980,
+        "nationality": "Country 1"
+      },
+      {
+        "id": 2,
+        "name": "Author2",
+        "birth_year": 1975,
+        "nationality": "Country 2"
+      }
+    ],
+    "books": [
+      {
+        "id": 101,
+        "title": "Book1",
+        "publication_year": 2005,
+        "author_id": 1
+      },
+      {
+        "id": 102,
+        "title": "Book2",
+        "publication_year": 2010,
+        "author_id": 1
+      },
+      {
+        "id": 103,
+        "title": "Book3",
+        "publication_year": 2008,
+        "author_id": 2
+      }
+    ]
+  }
